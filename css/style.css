@@ -577,7 +577,10 @@ body {
     color: var(--primary-white-color);
     margin: 0;
 }
-.box .white-title {
+footer-social-container {
+    margin-right: 93px;
+}
+.white-title {
     margin-bottom: 20px;
 }
 .footer-link {
@@ -597,6 +600,7 @@ body {
 }
 .form__subcribe {
     padding-left: 22px;
+    margin-right: 12px;
     min-width: 358px;
     background-color: inherit;
     border-color: var(--border-gray);
