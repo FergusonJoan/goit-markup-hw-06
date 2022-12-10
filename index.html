@@ -390,11 +390,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="box">
+                <div class="footer-submit-form">
                     <p class="white-title">Підпишіться на розсилку</p>
+
                     <input type="email" class="form__subcribe" name="email" id="email" placeholder="E-mail" required>
                     <label for="email"></label>
-
                     <button type="submit" class="main-button form__button--submit">Підписатися
                         <svg class="submit-icon" width="24" height="24">
                             <use href="./images/symbol-defs.svg#icon-send"></use>
@@ -402,6 +402,7 @@
                     </button>
                 </div>
         </footer>
+        <!-- BACKDROP -->
         <div data-modal class="backdrop is-hidden">
             <div class="modal">
                 <div class="modal-container">
@@ -419,7 +420,6 @@
                         <svg class="form__icon" width="22" height="20">
                             <use href="./images/symbol-defs.svg#icon-person"></use>
                         </svg>
-
                     </div>
                     <label for="tel" class="form__label">Телефон</label>
                     <div class="form__field">
@@ -427,7 +427,6 @@
                         <svg class="form__icon" width="22" height="20">
                             <use href="./images/symbol-defs.svg#icon-phone"></use>
                         </svg>
-
                     </div>
                     <label for="mail" class="form__label">Пошта</label>
                     <div class="form__field">
@@ -441,15 +440,21 @@
                         <textarea class="form__comment form__input" name="comment" id="comment" rows="7"
                             placeholder="Введіть текст"></textarea>
                     </div>
+
                     <div class="form__checkbox">
-                        <label class="form__label--checkbox">
-                            <input type="checkbox" class="form__check" name="checkbox" value="agreeing" required>
-                            <span class="form__icon--input"></span>
-                            <span class="form__checkbox--text">Погоджуюся з розсилкою та приймаю <a href=""
-                                    class="link form__link">Умови
+                        <label for="checkbox" class="checkbox__label">
+                            <input class="checkbox__input visually-hidden" type="checkbox" name="checkbox" id="checkbox"
+                                required>
+                            <svg class="checkbox__icon" width="16" height="15">
+                                <use href="./images/symbol-defs.svg#icon-check"></use>
+                            </svg>
+                            <span class="checkbox__vector"></span>
+                            <span class="checkbox__text">Погоджуюся з розсилкою та приймаю <a href=""
+                                    class="checkbox__link">Умови
                                     договору</a></span>
                         </label>
                     </div>
+
                     <div class="form__button--container">
                         <button type="submit" class="main-button form__button--send">Відправити</button>
                     </div>
